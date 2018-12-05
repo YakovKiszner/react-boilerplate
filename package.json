@@ -1,0 +1,71 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple react boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server/server.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
+    "start:prod": "npm run test && npm run build && npm run start",
+    "start:dev": "cross-env NODE_ENV=development node server/server.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YakovKiszner/react-boilerplate.git"
+  },
+  "engines": {
+    "npm": ">=6",
+    "node": ">=10"
+  },
+  "author": "Yakov Kiszner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YakovKiszner/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/YakovKiszner/react-boilerplate#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "chalk": "^2.4.1",
+    "compression": "^1.7.3",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.11",
+    "log-symbols": "^2.2.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/plugin-transform-react-constant-elements": "^7.0.0",
+    "@babel/plugin-transform-react-inline-elements": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.20",
+    "circular-dependency-plugin": "^5.0.2",
+    "clean-webpack-plugin": "^1.0.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.5.0",
+    "react-hot-loader": "^4.3.12",
+    "style-loader": "^0.23.1",
+    "svg-url-loader": "^2.3.2",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.26.1",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.1.4"
+  }
+}
